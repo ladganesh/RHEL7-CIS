@@ -1,4 +1,4 @@
-.RHEL 7 CIS STIG
+RHEL 7 CIS STIG
 ================
 
 
@@ -161,7 +161,7 @@ Ansible > 2.2
 Example Playbook
 -------------------------
 
-This sample playbook should be run in a folder that is above the main RHEL7-CIS / RHEL7-CIS-devel folder.
+This sample playbook should be run in a folder that is above the main RHEL7-CIS  folder.
 
 ```
 - name: Harden Server
@@ -183,7 +183,4 @@ Some examples of using tags:
     ansible-playbook site.yml --tags="patch"
 ```
 
-License
--------
 
-MIT
