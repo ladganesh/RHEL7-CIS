@@ -15,9 +15,9 @@ If you want to install this via the `ansible-galaxy` command you'll need to run 
 
 With this in the file requirements.yml:
 
-----------
+```
 - src: https://github.com/ladganesh/RHEL7-CIS.git
-----------
+```
 
 Based on [CIS RedHat Enterprise Linux 7 Benchmark v2.2.0 ](https://community.cisecurity.org/collab/public/index.php).
 
