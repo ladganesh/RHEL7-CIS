@@ -201,6 +201,9 @@ Some examples of using tags:
 	
     # Audit and patch the server
     ansible-playbook playbook.yml --tags="patch"
+	
+	#To run all hardening role
+    ansible-playbook playbook.yml
 --------------------------
 
 
