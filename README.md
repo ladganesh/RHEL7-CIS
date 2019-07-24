@@ -176,6 +176,20 @@ Tags
 ----
 Many tags are available for precise control of what is and is not changed.
 
+
+Ansible host using password : /etc/ansible/hosts
+```
+webserver ansible_ssh_host=172.31.19.183 ansible_ssh_port=22 ansible_ssh_user=root ansible_password=redhat
+```
+where, 
+host=target server ip address and localhost address
+ssh user = root
+password =redhat
+
+You can able configure host file as you wish. For security purpose, make ssh key based authentication.
+
+
+
 Some examples of using tags:
 
 --------------------------
