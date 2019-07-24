@@ -350,6 +350,7 @@ rhel7cis_firewall_services:
 # Warning Banner Content (issue, issue.net, motd)
 rhel7cis_warning_banner: |
     Authorized uses only. All activity may be monitored and reported.
+    @Ansible Role created by G@N
 # End Banner
 
 ## Section4 vars

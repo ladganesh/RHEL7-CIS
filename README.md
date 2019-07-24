@@ -1,4 +1,4 @@
-RHEL 7 CIS STIG
+RHEL 7 and Centos 7 CIS-Benchmark using ansible role
 ================
 
 
@@ -180,7 +180,7 @@ Some examples of using tags:
 
 ```
     # Audit and patch the site
-    ansible-playbook site.yml --tags="patch"
+    ansible-playbook playbook.yml --tags="patch"
 ```
 
 
