@@ -163,14 +163,14 @@ Example Playbook
 
 This sample playbook should be run in a folder that is above the main RHEL7-CIS  folder.
 
--------------------------
+```
 - name: Harden Server
   hosts: servers
   become: yes
 
   roles:
     - RHEL7-CIS
--------------------------
+```
 
 Tags
 ----
