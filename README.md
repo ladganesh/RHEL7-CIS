@@ -53,7 +53,7 @@ There are many role variables defined in defaults/main.yml. This list shows the 
 ##### Service variables:
 ###### These control whether a server should or should not be allowed to continue to run these services
 
-----------------------------------
+```
 rhel7cis_avahi_server: false  
 rhel7cis_cups_server: false  
 rhel7cis_dhcp_server: false  
@@ -80,7 +80,7 @@ rhel7cis_dovecot: false
 rhel7cis_samba: false  
 rhel7cis_squid: false  
 rhel7cis_net_snmp: false  
----------------------------------- 
+``` 
 
 ##### Designate server as a Mail server
 `rhel7cis_is_mail_server: false`
