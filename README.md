@@ -15,9 +15,9 @@ If you want to install this via the `ansible-galaxy` command you'll need to run 
 
 With this in the file requirements.yml:
 
-```
+----------
 - src: https://github.com/ladganesh/RHEL7-CIS.git
-```
+----------
 
 Based on [CIS RedHat Enterprise Linux 7 Benchmark v2.2.0 ](https://community.cisecurity.org/collab/public/index.php).
 
@@ -53,7 +53,7 @@ There are many role variables defined in defaults/main.yml. This list shows the 
 ##### Service variables:
 ###### These control whether a server should or should not be allowed to continue to run these services
 
-```
+----------------------------------
 rhel7cis_avahi_server: false  
 rhel7cis_cups_server: false  
 rhel7cis_dhcp_server: false  
@@ -80,7 +80,7 @@ rhel7cis_dovecot: false
 rhel7cis_samba: false  
 rhel7cis_squid: false  
 rhel7cis_net_snmp: false  
-```  
+---------------------------------- 
 
 ##### Designate server as a Mail server
 `rhel7cis_is_mail_server: false`
@@ -163,14 +163,14 @@ Example Playbook
 
 This sample playbook should be run in a folder that is above the main RHEL7-CIS  folder.
 
-```
+-------------------------
 - name: Harden Server
   hosts: servers
   become: yes
 
   roles:
     - RHEL7-CIS
-```
+-------------------------
 
 Tags
 ----
@@ -178,9 +178,15 @@ Many tags are available for precise control of what is and is not changed.
 
 Some examples of using tags:
 
-```
-    # Audit and patch the site
+--------------------------
+    #To list all section tags
+	ansible-playbook playbook.yml --list-tags
+	
+	#To run specific section using tags
+	ansible-playbook playbook.yml --rhel7cis_section1
+	
+    # Audit and patch the server
     ansible-playbook playbook.yml --tags="patch"
-```
+--------------------------
 
 
